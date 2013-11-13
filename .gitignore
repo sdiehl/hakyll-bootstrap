@@ -4,6 +4,8 @@ cabal-dev
 *.hi
 *.chi
 *.chs.h
+*.swp
 _cache
 _site
 cabal.sandbox.config
+.cabal-sandbox/
