@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>$title$</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/syntax.css" rel="stylesheet">
+    <link href="/css/carousel.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style>
+        body { 
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+  </head>
+  <body>
+    $partial("templates/nav.html")$
+
+    <!-- Caroousel
+    ================================================== -->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img data-src="holder.js/900x500/social/text: " alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="/pages/signup.html" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/industrial/text: " alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/vine/text: " alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Case Studies</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+
+    <div class="container marketing">
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Heading 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Nullam non est in neque luctus eleifend. Sed
+          tincidunt vestibulum facilisis. Aenean ut pulvinar massa.
+          </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Heading 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Nullam non est in neque luctus eleifend. Sed
+          tincidunt vestibulum facilisis. Aenean ut pulvinar massa.
+          </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Heading 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Nullam non est in neque luctus eleifend. Sed
+          tincidunt vestibulum facilisis. Aenean ut pulvinar massa.
+          </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Heading 1</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Nullam non est in neque luctus eleifend. Sed
+          tincidunt vestibulum facilisis. Aenean ut pulvinar massa.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Heading 2</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Nullam non est in neque luctus eleifend. Sed
+          tincidunt vestibulum facilisis. Aenean ut pulvinar massa.
+          </p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Header 3</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Nullam non est in neque luctus eleifend. Sed
+          tincidunt vestibulum facilisis. Aenean ut pulvinar massa.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+    $partial("templates/footer.html")$
+
+    </div>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/holder.js"></script>
+  </body>
+</html>
