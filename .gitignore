@@ -4,4 +4,6 @@ cabal-dev
 *.hi
 *.chi
 *.chs.h
-.virthualenv
+_cache
+_site
+cabal.sandbox.config
