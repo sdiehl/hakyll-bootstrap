@@ -22,9 +22,9 @@ import qualified Data.Map as M
 
 postCtx :: Context String
 postCtx =
-  dateField "date" "%B %e, %Y" `mappend`
-  mathCtx `mappend`
-  defaultContext
+  dateField "date" "%B %e, %Y"
+  `mappend` mathCtx
+  `mappend` defaultContext
 
 mathCtx :: Context String
 mathCtx = field "mathjax" $ \item -> do
@@ -34,14 +34,14 @@ mathCtx = field "mathjax" $ \item -> do
            else ""
 
 archiveCtx posts =
-  listField "posts" postCtx (return posts) `mappend`
-  constField "title" "Archives"            `mappend`
-  defaultContext
+  listField "posts" postCtx (return posts)
+  `mappend` constField "title" "Archives"
+  `mappend` defaultContext
 
 indexCtx posts =
-  listField "posts" postCtx (return posts) `mappend`
-  constField "title" "Home"                `mappend`
-  defaultContext
+  listField "posts" postCtx (return posts)
+  `mappend` constField "title" "Home"
+  `mappend` defaultContext
 
 --------------------------------------------------------------------
 -- Rules
