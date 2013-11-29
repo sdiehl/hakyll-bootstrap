@@ -18,8 +18,8 @@ $ cabal run preview
 To compile the full executable site generator use:
 
 ```shell
-$ ghc --make build.hs
-$ ./build rebuild
+$ ghc --make Main.hs
+$ ./Main rebuild
 ```
 
 The default static pages are renderd with plain HTML with mixins
