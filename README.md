@@ -38,10 +38,10 @@ pages/
 ```
 
 Blog posts are placed under the ``/posts`` folder and are
-composed in Markdown.
+generated from Markdown.
 
 Inline math is enabled via setting the ``mathjax`` metadata to
-``on``.
+``on``, by default MathJax is disabled.
 
 ```text
 ---
@@ -59,4 +59,4 @@ facilisis. Aenean ut pulvinar massa.
 License
 --------
 
-Released under MIT License. Do what you wish.
+Released under MIT License.
