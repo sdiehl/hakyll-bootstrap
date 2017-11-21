@@ -9,3 +9,4 @@ _cache
 _site
 cabal.sandbox.config
 .cabal-sandbox/
+.stack-work

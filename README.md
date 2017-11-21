@@ -7,19 +7,21 @@ hakyll-bootstrap
 
 A template for a small corporate Hakyll site.
 
+**Using stack**
+
+```bash
+$ stack build
+$ stack exec blog -- preview
+```
+
+**Using cabal**
+
 To get started run:
 
 ```shell
 $ cabal sandbox init
 $ cabal install --only-dependencies
 $ cabal run preview
-```
-
-To compile the full executable site generator use:
-
-```shell
-$ ghc --make Main.hs
-$ ./Main rebuild
 ```
 
 The default static pages are renderd with plain HTML with mixins
