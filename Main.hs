@@ -15,6 +15,7 @@ import Hakyll
 import Text.Pandoc
 import Data.Monoid (mappend)
 import qualified Data.Map as M
+import Data.Maybe (isJust)
 
 --------------------------------------------------------------------
 -- Contexts
@@ -29,7 +30,8 @@ postCtx =
 mathCtx :: Context String
 mathCtx = field "mathjax" $ \item -> do
   metadata <- getMetadata $ itemIdentifier item
-  return $ if "mathjax" `M.member` metadata
+  return ""
+  return $ if isJust $ lookupString "mathjax" metadata
            then "<script type=\"text/javascript\" src=\"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\"></script>"
            else ""
 
